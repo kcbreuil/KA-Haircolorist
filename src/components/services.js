@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Services() {
   return (
-    <section id="#services" className="my-10 text-center text-white">
+    <section id="services" className="container my-10 text-center text-white">
       <h1 className="py-1">Services</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

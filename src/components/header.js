@@ -8,15 +8,15 @@ export default function Header({ siteTitle }) {
   const navItems = [
     {
       name: "services",
-      link: "/#services",
+      link: "#services",
     },
     {
       name: "location",
-      link: "/#location",
+      link: "#location",
     },
     {
       name: "about",
-      link: "/#about",
+      link: "#about",
     },
   ]
 
@@ -30,7 +30,7 @@ export default function Header({ siteTitle }) {
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white transition duration-1000 delay-1000"
         >
           <svg
             className="w-3 h-3 fill-current"
@@ -45,14 +45,14 @@ export default function Header({ siteTitle }) {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+        } w-full block flex-grow lg:flex lg:items-center lg:w-auto transition duration-1000	delay-1000`}
       >
         <div className="text-sm lg:flex-grow">
           {navItems.map(item => {
             return (
               <Link
                 className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-                to={`${item.link}`}
+                to={`/${item.link}`}
               >
                 {item.name}
               </Link>
@@ -61,7 +61,7 @@ export default function Header({ siteTitle }) {
         </div>
         <div>
           <a
-            href="#bookings"
+            href="tel:305-509-9805"
             className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
           >
             Bookings
