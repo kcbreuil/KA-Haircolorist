@@ -2,11 +2,26 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-function Header({ siteTitle }) {
+export default function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
+  const navItems = [
+    {
+      name: "services",
+      link: "/#services",
+    },
+    {
+      name: "location",
+      link: "/#location",
+    },
+    {
+      name: "about",
+      link: "/#about",
+    },
+  ]
+
   return (
-    <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+    <nav className="flex flex-wrap items-center justify-between p-6 bg-black">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
         <span className="text-xl font-semibold tracking-tight">
           {siteTitle}
@@ -33,26 +48,23 @@ function Header({ siteTitle }) {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm lg:flex-grow">
-          <Link
-            to={`/`}
-            href="#responsive-header"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-          >
-            Home
-          </Link>
-          <Link
-            to={`/page-2`}
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-          >
-            page 2
-          </Link>
+          {navItems.map(item => {
+            return (
+              <Link
+                className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+                to={`${item.link}`}
+              >
+                {item.name}
+              </Link>
+            )
+          })}
         </div>
         <div>
           <a
-            href="#download"
+            href="#bookings"
             className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
           >
-            Download
+            Bookings
           </a>
         </div>
       </div>
@@ -67,5 +79,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header
