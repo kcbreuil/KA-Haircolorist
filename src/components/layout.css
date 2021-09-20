@@ -10,8 +10,12 @@ h3 {
   @apply text-lg;
 }
 a {
-  @apply text-blue-600;
+  @apply text-white;
 }
 
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Lato";
+}
