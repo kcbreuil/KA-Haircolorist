@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `KA COLORISTS`,
+    title: `KA HAIRCOLORISTS`,
     description: `Color specialists in South Miami.`,
     author: `@kayseabee`,
   },

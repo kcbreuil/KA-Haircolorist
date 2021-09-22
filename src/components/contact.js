@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react"
+import ContactForm from "./contactForm"
 
 export default function Contact() {
-    return (
-        <section>
-            
-        </section>
-    )
+  return (
+    <section>
+      <ContactForm />
+    </section>
+  )
 }

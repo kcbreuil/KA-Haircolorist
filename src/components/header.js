@@ -8,24 +8,28 @@ export default function Header({ siteTitle }) {
   const navItems = [
     {
       name: "services",
-      link: "#services",
+      link: "/#services",
     },
     {
       name: "location",
-      link: "#location",
+      link: "/#location",
     },
     {
       name: "about",
-      link: "#about",
+      link: "/about",
+    },
+    {
+      name: "contact",
+      link: "/about#contact",
     },
   ]
 
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 bg-black">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <span className="text-xl font-semibold tracking-tight">
+        <Link to={"/"} className="text-xl font-semibold tracking-tight">
           {siteTitle}
-        </span>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button
@@ -52,21 +56,21 @@ export default function Header({ siteTitle }) {
             return (
               <Link
                 className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-                to={`/${item.link}`}
+                to={`${item.link}`}
               >
                 {item.name}
               </Link>
             )
           })}
         </div>
-        <div>
+        {/* <div>
           <a
             href="tel:305-509-9805"
             className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
           >
             Bookings
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   )
