@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -14,13 +15,13 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Hero />
     <Services />
+    <StaticImage
+        className="w-full mt-0"
+        src="../images/image2.jpg"
+        alt="hair"
+      />
     <Location />
     <Contact />
-    <div className="flex place-content-center">
-      <Link to="/">
-        <FaArrowCircleLeft size={32} />
-      </Link>
-    </div>
   </Layout>
 )
 

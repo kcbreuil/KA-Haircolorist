@@ -35,7 +35,7 @@ export default function ContactForm() {
         Contact Us
       </h2>
       {isSubmitFormSuccessful ? (
-        <h3>We will get in touch with you soon!</h3>
+        <h3 className="my-10">We will get in touch with you soon!</h3>
       ) : (
         <form
           className="py-10 flex flex-col items-center"

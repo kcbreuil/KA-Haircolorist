@@ -25,10 +25,10 @@ export default function Header({ siteTitle }) {
   ]
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-10 bg-black">
+    <nav className="flex flex-wrap items-center justify-between p-4 md:p-10 bg-black">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
 
-        <Link to={`/`}className="text-xl font-semibold tracking-tight">
+        <Link to={`/`}className="text-lg md:text-2xl font-semibold tracking-tight">
           {siteTitle}
         </Link>
       </div>
@@ -56,7 +56,7 @@ export default function Header({ siteTitle }) {
           {navItems.map(item => {
             return (
               <Link
-                className="block mt pb-4-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white uppercase hover:underline"
+                className="block mt pb-4-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white hover:translate-x-10"
                 to={`/${item.link}`}
               >
                 {item.name}

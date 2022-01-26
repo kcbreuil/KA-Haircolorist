@@ -4,7 +4,7 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="my-10 flex flex-col items-center text-center text-white h-screen"
+      className="my-10 flex flex-col items-center text-center text-white h-full"
     >
       <h2 className="uppercase border border-white rounded p-4 max-w-max my-10">
         Location
