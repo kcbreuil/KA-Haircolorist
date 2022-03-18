@@ -67,9 +67,9 @@ export default function Header({ siteTitle }) {
         <div>
           <a
             href="tel:305-509-9805"
-            className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
+            className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black uppercase hover:bg-white lg:mt-0"
           >
-            Bookings
+            BOOK NOW
           </a>
         </div>
       </div>

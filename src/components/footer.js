@@ -13,7 +13,7 @@ export default function Footer() {
       © {new Date().getFullYear()}
       <br></br>
       created with <span role="img">☕</span> by
-      <a href="kaitlynbreuil.com"> Katie Breuil</a>
+      <a href="http://kaitlynbreuil.com/"> Katie Breuil</a>
     </footer>
   )
 }

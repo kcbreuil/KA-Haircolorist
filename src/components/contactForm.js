@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <div className="flex flex-col items-center	text-white">
-      <h2 className="uppercase border border-white rounded p-4 max-w-max mt-10">
+      <h2 className="text-3xl uppercase border border-white rounded p-4 max-w-max mt-10">
         Contact Us
       </h2>
       {isSubmitFormSuccessful ? (

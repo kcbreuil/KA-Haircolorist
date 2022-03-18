@@ -6,6 +6,7 @@ import Seo from "../components/seo"
 import Services from "../components/services"
 import Location from "../components/location"
 import Hero from "../components/hero"
+import About from "../components/about"
 import { Link } from "gatsby"
 import { FaArrowCircleLeft } from "react-icons/fa"
 import Contact from "../components/contact"
@@ -21,6 +22,7 @@ const IndexPage = () => (
         alt="hair"
       />
     <Location />
+    <About />
     <Contact />
   </Layout>
 )
