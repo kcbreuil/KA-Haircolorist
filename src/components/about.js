@@ -18,14 +18,7 @@ export default function About() {
         placerat felis. Donec tincidunt viverra libero, et condimentum dui. In
         fringilla sapien euismod, fringilla metus eget, dictum nulla. Nunc sed
         enim nulla. Nam feugiat imperdiet mauris, eget tincidunt quam tristique
-        ut. Etiam odio purus, elementum nec magna eu, malesuada fermentum est.
-        Cras non nisl ac metus porttitor maximus. Mauris condimentum eu turpis
-        sit amet porttitor. Fusce pretium lorem vel enim ultrices, sed aliquam
-        augue sodales. Donec in orci purus. Ut ut sapien auctor, hendrerit quam
-        vel, euismod felis. Duis at sollicitudin lectus. Maecenas in dapibus
-        nisi, non ultricies arcu. Quisque volutpat tincidunt sagittis. Proin et
-        mi vitae tellus porttitor lobortis non at ante. Nam et laoreet ligula,
-        vitae pulvinar tortor.
+        ut. 
       </p>
     </section>
   )
