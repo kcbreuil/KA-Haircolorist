@@ -33,7 +33,7 @@ export default function Services() {
       className="my-20 px-10 flex flex-col items-center text-center text-white h-screen"
     >
 
-      <h2 className="text-3xl uppercase border border-white rounded p-4 max-w-max my-10">
+      <h2 className="text-2xl uppercase border border-white rounded p-4 max-w-max my-10">
         Services
       </h2>
       <div className="w-full grid grid-cols gap-4 md:grid-cols-3 grow">

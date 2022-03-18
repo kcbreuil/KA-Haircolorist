@@ -7,7 +7,7 @@ export default function About() {
       id="about"
       className="my-20 px-10 flex flex-col items-center text-center text-white h-screen"
     >
-      <h2 className="text-3xl uppercase border border-white rounded p-4 max-w-max my-10">
+      <h2 className="text-2xl uppercase border border-white rounded p-4 max-w-max my-10">
         About
       </h2>
       <p className="text-xl w-1/2">
