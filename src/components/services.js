@@ -36,7 +36,7 @@ export default function Services() {
       <h2 className="uppercase border border-white rounded p-4 max-w-max my-10">
         Services
       </h2>
-      <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-3 grow">
+      <div className="w-full grid grid-cols gap-4 md:grid-cols-3 grow">
         {content.map(item => {
           const { header, items } = item
           return (
